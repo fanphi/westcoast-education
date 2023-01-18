@@ -1,0 +1,51 @@
+{
+  "courses": [
+    {
+      "courseNumber": 111,
+      "courseTitle": "JavaScript 1",
+      "courseLength": "5 veckor",
+      "courseDescription": "Lorem ipsum",
+      "courseStartDate": "01/03/2023"
+    },
+    {
+      "courseNumber": 222,
+      "courseTitle": "JavaScript 2",
+      "courseLength": "4 veckor",
+      "courseDescription": "Lorem ipsum",
+      "courseStartDate": "15/04/23"
+    },
+    {
+      "courseNumber": 333,
+      "courseTitle": "HTML för nybörjare",
+      "courseLength": "3 veckor",
+      "courseDescription": "Lorem ipsum",
+      "courseStartDate": "05/05/2023"
+    }
+  ],
+  "teachers":[
+    {
+      "firstName": "Test",
+      "lastName": "Testsson",
+      "socialSecurityNumber": "19780330",
+      "email": "testtestsson@westcoasteducation.se",
+      "phoneNumber": "0701234567",
+      "competenceList": ["JavaScript", "React", "HTML", "CSS"]
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Testsson",
+      "socialSecurityNumber": "19780330",
+      "email": "testtestsson@westcoasteducation.se",
+      "phoneNumber": "0701234567",
+      "competenceList": ["JavaScript", "React", "HTML", "CSS"]
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Testsson",
+      "socialSecurityNumber": "19780330",
+      "email": "testtestsson@westcoasteducation.se",
+      "phoneNumber": "0701234567",
+      "competenceList": ["JavaScript", "React", "HTML", "CSS"]
+    }
+  ]
+}
