@@ -23,16 +23,29 @@
       "courseLength": "3 veckor",
       "courseDescription": "Lorem ipsum",
       "courseStartDate": "05/05/2023"
+    },
+    {
+      "id": "648",
+      "courseNumber": "34556",
+      "courseTitle": "Webbutveckling 3",
+      "courseLength": "5 veckor",
+      "courseDescription": "lorem ipsum",
+      "courseStartDate": "01/07/23"
     }
   ],
-  "teachers":[
+  "teachers": [
     {
       "firstName": "Test",
       "lastName": "Testsson",
       "socialSecurityNumber": "19780330",
       "email": "testtestsson@westcoasteducation.se",
       "phoneNumber": "0701234567",
-      "competenceList": ["JavaScript", "React", "HTML", "CSS"]
+      "competenceList": [
+        "JavaScript",
+        "React",
+        "HTML",
+        "CSS"
+      ]
     },
     {
       "firstName": "Test",
@@ -40,7 +53,12 @@
       "socialSecurityNumber": "19780330",
       "email": "testtestsson@westcoasteducation.se",
       "phoneNumber": "0701234567",
-      "competenceList": ["JavaScript", "React", "HTML", "CSS"]
+      "competenceList": [
+        "JavaScript",
+        "React",
+        "HTML",
+        "CSS"
+      ]
     },
     {
       "firstName": "Test",
@@ -48,7 +66,12 @@
       "socialSecurityNumber": "19780330",
       "email": "testtestsson@westcoasteducation.se",
       "phoneNumber": "0701234567",
-      "competenceList": ["JavaScript", "React", "HTML", "CSS"]
+      "competenceList": [
+        "JavaScript",
+        "React",
+        "HTML",
+        "CSS"
+      ]
     }
   ]
 }
