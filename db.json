@@ -1,6 +1,7 @@
 {
   "courses": [
     {
+      "id": 1,
       "courseNumber": 111,
       "courseTitle": "JavaScript 1",
       "courseLength": "5 veckor",
@@ -8,6 +9,7 @@
       "courseStartDate": "01/03/2023"
     },
     {
+      "id": 2,
       "courseNumber": 222,
       "courseTitle": "JavaScript 2",
       "courseLength": "4 veckor",
@@ -15,6 +17,7 @@
       "courseStartDate": "15/04/23"
     },
     {
+      "id": 3,
       "courseNumber": 333,
       "courseTitle": "HTML för nybörjare",
       "courseLength": "3 veckor",

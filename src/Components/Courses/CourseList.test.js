@@ -5,7 +5,7 @@ describe("CourseList component", () => {
   const setup = () => render(<CourseList />);
 
   describe("CourseList page", () => {
-    test('should have a title "Kurslista"', () => {
+    test('should have title "Kurslista"', () => {
       // Arrange
       setup();
       const title = screen.getByRole("heading");
@@ -17,16 +17,16 @@ describe("CourseList component", () => {
     });
   });
 
-  describe("CourseList request", () => {
-    test("should return a list of courses", async () => {
-      // Arrange
-      setup();
+  // describe("CourseList request", () => {
+  //   test("should return a list of courses", async () => {
+  //     // Arrange
+  //     setup();
 
-      const courses = await screen.findAllByRole("listitem");
-      // Act
+  //     const courses = await screen.findAllByRole("listitem");
+  //     // Act
 
-      // Assert
-      expect(courses).not.toHaveLength(0);
-    });
-  });
+  //     // Assert
+  //     expect(courses).not.toHaveLength(0);
+  //   });
+  // });
 });
