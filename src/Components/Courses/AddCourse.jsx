@@ -5,14 +5,14 @@ const AddCourse = (props) => {
   const courseLength = useRef();
   const courseDescription = useRef();
   const courseStartDate = useRef();
-  console.log((Math.random() * 1000).toFixed(0));
+  console.log(Number((Math.random() * 1000).toFixed(0)));
   const onSaveHandler = (e) => {
     e.preventDefault();
 
     // We should do validation here before we save the vehicle...
 
     const course = {
-      id: (Math.random() * 1000).toFixed(0),
+      id: Number((Math.random() * 1000).toFixed(0)),
       courseNumber: courseNumber.current.value,
       courseTitle: courseTitle.current.value,
       courseLength: courseLength.current.value,

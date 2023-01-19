@@ -25,13 +25,14 @@
       "courseStartDate": "05/05/2023"
     },
     {
-      "id": "648",
+      "id": 648,
       "courseNumber": "34556",
       "courseTitle": "Webbutveckling 3",
       "courseLength": "5 veckor",
       "courseDescription": "lorem ipsum",
       "courseStartDate": "01/07/23"
     }
+  
   ],
   "teachers": [
     {
