@@ -7,18 +7,18 @@ const TeacherList = () => {
   const context = useContext(ListContext);
   let teacher = context.teachers;
   let showModal = context.showModal;
-  let toggleAddCourseHandler = context.showAddCourseHandler;
+  let toggleAddTeacherHandler = context.toggleAddHandler;
   let onSaveTeacherHandler = context.onSaveTeacherHandler;
 
   return (
     <>
       {showModal && (
-        <Modal title="Lägg till en lärare" onClick={toggleAddCourseHandler}>
+        <Modal title="Lägg till en lärare" onClick={toggleAddTeacherHandler}>
           <AddTeacher onSave={onSaveTeacherHandler} />
         </Modal>
       )}
       <section data-testid="teacher-list-component" className="list-section">
-        <button onClick={toggleAddCourseHandler} className="add-btn">
+        <button onClick={toggleAddTeacherHandler} className="add-btn">
           Lägg till en lärare
         </button>
 
@@ -35,7 +35,8 @@ const TeacherList = () => {
                 {teacher.firstName} {teacher.lastName}
               </Link>
               <br></br>
-              <span className="title">Personummer:</span> {teacher.socialSecurityNumber}
+              <span className="title">Personummer:</span>{" "}
+              {teacher.socialSecurityNumber}
               <br></br>
               <span className="title">Epost:</span> {teacher.email}
               <br></br>

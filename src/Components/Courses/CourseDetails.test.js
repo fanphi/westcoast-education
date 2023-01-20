@@ -8,7 +8,7 @@ describe("CourseDetails component", () => {
     test('should have title "Kursdetaljer"', () => {
       // Arrange
       setup();
-      const title = screen.getByRole("heading", {name: /kursdetaljer/i});
+      const title = screen.getByRole("heading", { name: /kursdetaljer/i });
 
       // Act
 
@@ -16,5 +16,4 @@ describe("CourseDetails component", () => {
       expect(title).toBeInTheDocument();
     });
   });
-
 });

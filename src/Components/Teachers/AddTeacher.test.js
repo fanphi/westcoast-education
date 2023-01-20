@@ -16,5 +16,4 @@ describe("AddTeacher component", () => {
       expect(firstNameInput).toBeInTheDocument();
     });
   });
-
 });

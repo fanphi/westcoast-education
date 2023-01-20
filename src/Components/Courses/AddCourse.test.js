@@ -16,5 +16,4 @@ describe("AddCourse component", () => {
       expect(courseNameInput).toBeInTheDocument();
     });
   });
-
 });

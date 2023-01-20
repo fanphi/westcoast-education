@@ -8,22 +8,20 @@ import Navbar from "./Components/Layout/Navbar";
 import Start from "./Components/Start/Start";
 import "./App.css";
 
-
-
 function App() {
   return (
     <Router>
       <ListContextProvider>
         <header className="nav-header">
-          <Navbar/>
+          <Navbar />
         </header>
         <main>
           <Routes>
             <Route path="/courseList" element={<CourseList />} />
             <Route path="/" element={<Start />} />
-            <Route path="course/:id" element={<CourseDetails/>}/>
+            <Route path="course/:id" element={<CourseDetails />} />
             <Route path="/teacherList" element={<TeacherList />} />
-            <Route path="teacher/:id" element={<TeacherDetails/>}/>
+            <Route path="teacher/:id" element={<TeacherDetails />} />
           </Routes>
         </main>
       </ListContextProvider>

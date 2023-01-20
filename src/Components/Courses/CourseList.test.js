@@ -16,5 +16,4 @@ describe("CourseList component", () => {
       expect(title).toHaveTextContent(/kurslista/i);
     });
   });
-
 });

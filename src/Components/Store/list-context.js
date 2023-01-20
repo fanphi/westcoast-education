@@ -5,8 +5,7 @@ const ListContext = React.createContext({
   teachers: [],
   showModal: false,
   onSaveCourseHandler: () => {},
-  showAddCourseHandler: () => {},
-  loadCourses: () => {},
+  toggleAddHandler: () => {},
   onSaveTeacherHandler: () => {},
 });
 
@@ -61,9 +60,7 @@ export const ListContextProvider = (props) => {
     }
   };
 
-  
-
-  const showAddCourseHandler = () => {
+  const toggleAddHandler = () => {
     if (!showModal) {
       setShowModal(true);
     } else {
@@ -79,8 +76,7 @@ export const ListContextProvider = (props) => {
         showModal,
         onSaveCourseHandler,
         onSaveTeacherHandler,
-        showAddCourseHandler,
-        loadCourses,
+        toggleAddHandler,
       }}
     >
       {props.children}

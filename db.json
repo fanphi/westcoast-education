@@ -41,7 +41,11 @@
       "socialSecurityNumber": "19780330-0122",
       "email": "testtestsson@westcoasteducation.se",
       "phoneNumber": "0701234567",
-      "competenceList": ["JavaScript, ", "HTML, ", "CSS"]
+      "competenceList": [
+        "JavaScript, ",
+        "HTML, ",
+        "CSS"
+      ]
     },
     {
       "id": 2,
@@ -50,7 +54,11 @@
       "socialSecurityNumber": "1991123-4408",
       "email": "johndoe@westcoasteducation.se",
       "phoneNumber": "0731112233",
-      "competenceList": ["React, ", "JavaScript, ", "Angular"]
+      "competenceList": [
+        "React, ",
+        "JavaScript, ",
+        "Angular"
+      ]
     },
     {
       "id": 3,
@@ -59,7 +67,10 @@
       "socialSecurityNumber": "19770105-2200",
       "email": "janedoe@westcoasteducation.se",
       "phoneNumber": "0704445566",
-      "competenceList": ["HTML, ", "CSS"]
+      "competenceList": [
+        "HTML, ",
+        "CSS"
+      ]
     },
     {
       "id": 537,
@@ -68,7 +79,11 @@
       "socialSecurityNumber": "19890913-0123",
       "email": "annaandersson@westcoasteducation.se",
       "phoneNumber": "0730987654",
-      "competenceList": ["JavaScript, ", "HTML, ", "React"]
+      "competenceList": [
+        "JavaScript, ",
+        "HTML, ",
+        "React"
+      ]
     }
   ]
 }

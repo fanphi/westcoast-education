@@ -31,7 +31,7 @@ code {
     font-weight: bolder;
     align-self: flex-end;
     margin-right: 5%;
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 768px) {
       align-self: center;
       width: 60%;
       padding: 2%;
@@ -42,7 +42,7 @@ code {
     color: white;
     background-color: #eb7246;
   }
-  
+
   .start-heading {
     margin-left: 3%;
     margin-right: 3%;
@@ -59,7 +59,7 @@ code {
   .list-ul {
     list-style-type: none;
     min-width: 40%;
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 768px) {
       min-width: 60%;
     }
     .listitem {
@@ -90,7 +90,7 @@ code {
   border: 2px solid #eb7246;
   padding: 2%;
   border-radius: 15px;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 768px) {
     min-width: 70%;
     padding: 5%;
   }
@@ -100,21 +100,20 @@ code {
   }
 }
 
-
-.form{
+.form {
   display: flex;
   flex-direction: column;
-  .add-input{
+  .add-input {
     border-radius: 4px;
     border: 1px solid black;
     height: 25px;
   }
 
-  .add-label{
+  .add-label {
     margin-top: 0.5%;
   }
 
-  .btn-div{
+  .btn-div {
     align-self: center;
     width: 30%;
     margin: 2%;
@@ -122,17 +121,17 @@ code {
     justify-content: center;
     margin-bottom: 4%;
   }
-.save-btn{
-  padding: 3%;
-  border-radius: 15px;
-  border: 2px solid #eb7246;
-  background-color: white;
-  color: #c55d37;
-  font-weight: bolder;
-}
+  .save-btn {
+    padding: 3%;
+    border-radius: 15px;
+    border: 2px solid #eb7246;
+    background-color: white;
+    color: #c55d37;
+    font-weight: bolder;
+  }
 
-.save-btn:hover{
-  color: white;
-  background-color: #eb7246;
-}
+  .save-btn:hover {
+    color: white;
+    background-color: #eb7246;
+  }
 }

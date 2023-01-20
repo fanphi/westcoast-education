@@ -1,4 +1,4 @@
-.overlay{
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,12 +8,10 @@
   background: rgba(0, 0, 0, 0.4);
 }
 
-.card{
-  
-    background: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-    border-radius: 10px;
-  
+.card {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
 }
 
 .modal {
@@ -23,7 +21,6 @@
   width: 80%;
   z-index: 100;
   overflow: hidden;
-  
 }
 
 .header {
@@ -44,14 +41,14 @@
   padding-bottom: 0;
 }
 
-.modal-btn{
+.modal-btn {
   background-color: #eb7246;
   border: none;
   color: white;
   align-self: flex-end;
 }
 
-.modal-btn:hover{
+.modal-btn:hover {
   color: black;
 }
 

@@ -8,7 +8,9 @@ describe("TeacherList component", () => {
     test('should have button with text "Lägg till en lärare"', () => {
       // Arrange
       setup();
-      const button = screen.getByRole("button", {name: /lägg till en lärare/i});
+      const button = screen.getByRole("button", {
+        name: /lägg till en lärare/i,
+      });
 
       // Act
 
@@ -16,5 +18,4 @@ describe("TeacherList component", () => {
       expect(button).toBeInTheDocument();
     });
   });
-
 });

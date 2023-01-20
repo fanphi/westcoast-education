@@ -39,8 +39,7 @@ const TeacherDetails = () => {
           <span className="title">Mobilnummer:</span> {teacher.phoneNumber}
           <br></br>
           <span className="title">Kompetensområden: </span>
-           {teacher.competenceList} 
-           
+          {teacher.competenceList}
         </p>
       </div>
     </section>

@@ -39,7 +39,7 @@ code {
   margin-right: 5%;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .list-section .add-btn {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -76,7 +76,7 @@ code {
   min-width: 40%;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .list-section .list-ul {
     min-width: 60%;
   }
@@ -111,7 +111,7 @@ code {
   border-radius: 15px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .details-about {
     min-width: 70%;
     padding: 5%;

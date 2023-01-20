@@ -1,21 +1,21 @@
 import { useRef } from "react";
 const AddCourse = (props) => {
-  const courseNumber = useRef();
-  const courseTitle = useRef();
-  const courseLength = useRef();
-  const courseDescription = useRef();
-  const courseStartDate = useRef();
+  const courseNumberRef = useRef();
+  const courseTitleRef = useRef();
+  const courseLengthRef = useRef();
+  const courseDescriptionRef = useRef();
+  const courseStartDateRef = useRef();
 
   const onSaveHandler = (e) => {
     e.preventDefault();
 
     const course = {
       id: Number((Math.random() * 1000).toFixed(0)),
-      courseNumber: Number(courseNumber.current.value),
-      courseTitle: courseTitle.current.value,
-      courseLength: courseLength.current.value,
-      courseDescription: courseDescription.current.value,
-      courseStartDate: courseStartDate.current.value,
+      courseNumber: Number(courseNumberRef.current.value),
+      courseTitle: courseTitleRef.current.value,
+      courseLength: courseLengthRef.current.value,
+      courseDescription: courseDescriptionRef.current.value,
+      courseStartDate: courseStartDateRef.current.value,
     };
     props.onSave(course);
   };
@@ -28,7 +28,7 @@ const AddCourse = (props) => {
       <input
         id="courseNumber"
         placeholder=" Kursnummer"
-        ref={courseNumber}
+        ref={courseNumberRef}
         type="number"
         className="add-input"
         required
@@ -40,7 +40,7 @@ const AddCourse = (props) => {
       <input
         id="courseTitle"
         placeholder=" Kursnamn"
-        ref={courseTitle}
+        ref={courseTitleRef}
         className="add-input"
         required
       />
@@ -51,7 +51,7 @@ const AddCourse = (props) => {
       <input
         id="courseLength"
         placeholder=" Kurslängd"
-        ref={courseLength}
+        ref={courseLengthRef}
         className="add-input"
         required
       />
@@ -62,7 +62,7 @@ const AddCourse = (props) => {
       <input
         id="courseStartDate"
         placeholder=" Kursstart"
-        ref={courseStartDate}
+        ref={courseStartDateRef}
         className="add-input"
         type="date"
         required
@@ -74,7 +74,7 @@ const AddCourse = (props) => {
       <input
         id="courseDescription"
         placeholder=" Kursbeskrivning"
-        ref={courseDescription}
+        ref={courseDescriptionRef}
         className="add-input"
         required
       />

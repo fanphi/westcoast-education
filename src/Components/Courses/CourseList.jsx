@@ -8,7 +8,7 @@ const CourseList = () => {
   const context = useContext(ListContext);
   let course = context.courses;
   let showModal = context.showModal;
-  let toggleAddCourseHandler = context.showAddCourseHandler;
+  let toggleAddCourseHandler = context.toggleAddHandler;
   let onSaveCourseHandler = context.onSaveCourseHandler;
 
   return (
