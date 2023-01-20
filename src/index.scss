@@ -93,3 +93,40 @@ code {
     color: #eb7246;
   }
 }
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  .add-input{
+    border-radius: 4px;
+    border: 1px solid black;
+    height: 25px;
+  }
+
+  .add-label{
+    margin-top: 0.5%;
+  }
+
+  .btn-div{
+    align-self: center;
+    width: 30%;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+  }
+.save-btn{
+  padding: 3%;
+  border-radius: 15px;
+  border: 2px solid #eb7246;
+  background-color: white;
+  color: #c55d37;
+  font-weight: bolder;
+}
+
+.save-btn:hover{
+  color: white;
+  background-color: #eb7246;
+}
+}

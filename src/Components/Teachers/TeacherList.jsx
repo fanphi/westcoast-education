@@ -35,11 +35,11 @@ const TeacherList = () => {
                 {teacher.firstName} {teacher.lastName}
               </Link>
               <br></br>
-              Personummer: {teacher.socialSecurityNumber}
+              <span className="title">Personummer:</span> {teacher.socialSecurityNumber}
               <br></br>
-              Epost: {teacher.email}
+              <span className="title">Epost:</span> {teacher.email}
               <br></br>
-              Mobilnummer: {teacher.phoneNumber}
+              <span className="title">Mobilnummer:</span> {teacher.phoneNumber}
               <br></br>
             </li>
           ))}

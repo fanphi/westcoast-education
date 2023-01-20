@@ -6,13 +6,14 @@ const AddCourse = (props) => {
   const courseDescription = useRef();
   const courseStartDate = useRef();
 
+
+
   const onSaveHandler = (e) => {
     e.preventDefault();
 
-
     const course = {
       id: Number((Math.random() * 1000).toFixed(0)),
-      courseNumber: courseNumber.current.value,
+      courseNumber: Number(courseNumber.current.value),
       courseTitle: courseTitle.current.value,
       courseLength: courseLength.current.value,
       courseDescription: courseDescription.current.value,
@@ -22,42 +23,66 @@ const AddCourse = (props) => {
   };
 
   return (
-    <form onSubmit={onSaveHandler}>
-      <div>
-        <label htmlFor="courseNumber">Kursnummer</label>
-        <input
-          id="courseNumber"
-          placeholder="Kursnummer"
-          ref={courseNumber}
-          type="number"
-        />
-      </div>
-      <div>
-        <label htmlFor="courseTitle">Kursnamn</label>
-        <input id="courseTitle" placeholder="Kursnamn" ref={courseTitle} />
-      </div>
-      <div>
-        <label htmlFor="courseLength">Kurslängd</label>
-        <input id="courseLength" placeholder="Kurslängd" ref={courseLength} />
-      </div>
-      <div>
-        <label htmlFor="courseStartDate">Kursstart</label>
-        <input
-          id="courseStartDate"
-          placeholder="Kursstart"
-          ref={courseStartDate}
-        />
-      </div>
-      <div>
-        <label htmlFor="courseDescription">Kursbeskrivning</label>
-        <input
-          id="courseDescription"
-          placeholder="Kursbeskrivning"
-          ref={courseDescription}
-        />
-      </div>
-      <div>
-        <button>Spara kurs</button>
+    <form onSubmit={onSaveHandler} className="form">
+      <label htmlFor="courseNumber" className="add-label">
+        Kursnummer
+      </label>
+      <input
+        id="courseNumber"
+        placeholder=" Kursnummer"
+        ref={courseNumber}
+        type="number"
+        className="add-input"
+        required
+      />
+
+      <label htmlFor="courseTitle" className="add-label">
+        Kursnamn
+      </label>
+      <input
+        id="courseTitle"
+        placeholder=" Kursnamn"
+        ref={courseTitle}
+        className="add-input"
+        required
+      />
+
+      <label htmlFor="courseLength" className="add-label">
+        Kurslängd
+      </label>
+      <input
+        id="courseLength"
+        placeholder=" Kurslängd"
+        ref={courseLength}
+        className="add-input"
+        required
+      />
+
+      <label htmlFor="courseStartDate" className="add-label">
+        Kursstart
+      </label>
+      <input
+        id="courseStartDate"
+        placeholder=" Kursstart"
+        ref={courseStartDate}
+        className="add-input"
+        type="date"
+        required
+      />
+
+      <label htmlFor="courseDescription" className="add-label">
+        Kursbeskrivning
+      </label>
+      <input
+        id="courseDescription"
+        placeholder=" Kursbeskrivning"
+        ref={courseDescription}
+        className="add-input"
+        required
+      />
+
+      <div className="btn-div">
+        <button className="save-btn">Spara kurs</button>
       </div>
     </form>
   );

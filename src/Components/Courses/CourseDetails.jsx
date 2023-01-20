@@ -25,7 +25,7 @@ const CourseDetails = () => {
 return(
   <section className="list-section">
     <h2 className="list-heading">Kursdetaljer</h2>
-    <about className="details-about">
+    <div className="details-about">
    <h3 className="about-heading">{course.courseTitle}</h3>
    <p>
     <span className="title">Kursnummer:</span> {course.courseNumber}
@@ -36,7 +36,7 @@ return(
     <br></br>
     <span className="title">Kursbeskrivning:</span> {course.courseDescription}
     </p>
-   </about>
+   </div>
   </section>
 )
 }

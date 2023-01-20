@@ -6,7 +6,7 @@
       "courseTitle": "JavaScript 1",
       "courseLength": "5 veckor",
       "courseDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "courseStartDate": "01/03/2023"
+      "courseStartDate": "2023-03-01"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "courseTitle": "JavaScript 2",
       "courseLength": "4 veckor",
       "courseDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "courseStartDate": "15/04/23"
+      "courseStartDate": "2023-04-18"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "courseTitle": "HTML för nybörjare",
       "courseLength": "3 veckor",
       "courseDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "courseStartDate": "05/05/2023"
+      "courseStartDate": "2023-05-05"
     },
     {
       "id": 648,
@@ -30,7 +30,7 @@
       "courseTitle": "Webbutveckling 3",
       "courseLength": "5 veckor",
       "courseDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "courseStartDate": "01/07/23"
+      "courseStartDate": "2023-07-01"
     }
   ],
   "teachers": [
@@ -41,7 +41,12 @@
       "socialSecurityNumber": "19780330",
       "email": "testtestsson@westcoasteducation.se",
       "phoneNumber": "0701234567",
-      "competenceList": ["JavaScript", "React", "HTML", "CSS"]
+      "competenceList": [
+        "JavaScript",
+        "React",
+        "HTML",
+        "CSS"
+      ]
     },
     {
       "id": 2,
@@ -50,7 +55,12 @@
       "socialSecurityNumber": "19780330",
       "email": "testtestsson@westcoasteducation.se",
       "phoneNumber": "0701234567",
-      "competenceList": ["JavaScript", "React", "HTML", "CSS"]
+      "competenceList": [
+        "JavaScript",
+        "React",
+        "HTML",
+        "CSS"
+      ]
     },
     {
       "id": 3,
@@ -59,7 +69,12 @@
       "socialSecurityNumber": "19780330",
       "email": "testtestsson@westcoasteducation.se",
       "phoneNumber": "0701234567",
-      "competenceList": ["JavaScript", "React", "HTML", "CSS"]
+      "competenceList": [
+        "JavaScript",
+        "React",
+        "HTML",
+        "CSS"
+      ]
     }
   ]
 }

@@ -36,12 +36,12 @@ const CourseList = () => {
                 {course.courseTitle}
               </Link>
               <br></br>
-              Kursnummer: {course.courseNumber}
+              <span className="title">Kursnummer:</span> {course.courseNumber}
               <br></br>
-              Kurslängd: {course.courseLength}
+              <span className="title">Kurslängd:</span> {course.courseLength}
               <br></br>
-              {/* Beskrivning av kursen: {course.courseDescription} <br></br> */}
-              Startdatum: {course.courseStartDate}
+              <span className="title">Startdatum:</span>{" "}
+              {course.courseStartDate}
             </li>
           ))}
         </ul>
