@@ -17,16 +17,4 @@ describe("CourseList component", () => {
     });
   });
 
-  // describe("CourseList request", () => {
-  //   test("should return a list of courses", async () => {
-  //     // Arrange
-  //     setup();
-
-  //     const courses = await screen.findAllByRole("listitem");
-  //     // Act
-
-  //     // Assert
-  //     expect(courses).not.toHaveLength(0);
-  //   });
-  // });
 });
