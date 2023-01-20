@@ -3,14 +3,14 @@ import CourseList from "./Components/Courses/CourseList";
 import CourseDetails from "./Components/Courses/CourseDetails";
 import Navbar from "./Components/Layout/Navbar";
 import "./App.css";
-import { AuthContextProvider } from "./Components/Store/auth-context";
+import { ListContextProvider } from "./Components/Store/list-context";
 
 
 function App() {
   return (
     <Router>
-      <AuthContextProvider>
-        <header>
+      <ListContextProvider>
+        <header className="nav-header">
           <Navbar/>
         </header>
         <main>
@@ -20,7 +20,7 @@ function App() {
             <Route path="course/:id" element={<CourseDetails/>}/>
           </Routes>
         </main>
-      </AuthContextProvider>
+      </ListContextProvider>
     </Router>
   );
 }

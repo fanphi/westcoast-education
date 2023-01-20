@@ -1,64 +1,35 @@
-import { useContext, useEffect, useState } from "react";
-import AuthContext from "../Store/auth-context";
+import { useContext } from "react";
+
 import { Link } from "react-router-dom";
 import AddCourse from "./AddCourse";
 import Modal from "../UI/Modal";
+import ListContext from "../Store/list-context";
+import "./Courses.css";
 const CourseList = () => {
-  const context = useContext(AuthContext);
-  //  let course = context.courses
-  const [course, setCourse] = useState([]);
-  const [showModal, setShowModal] = useState(false);
-
-  useEffect(() => {
-    loadCourses();
-  }, []);
-
-  const loadCourses = () => {
-    fetch("http://localhost:3010/courses")
-      .then((response) => response.json())
-      .then((data) => setCourse(data));
-  };
-
-  const showAddCourseHandler = () => {
-    if(!showModal){
-    setShowModal(true);
-    }
-    else{
-      setShowModal(false)
-    }
-  };
-
-  const onSaveHandler = async (course) => {
-    console.log(course);
-
-    const result = await fetch("http://localhost:3010/courses", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(course),
-    });
-
-    if (result.status === 201) {
-      loadCourses();
-      setShowModal(false);
-    }
-  };
+  const context = useContext(ListContext);
+  let course = context.courses;
+  let showModal = context.showModal;
+  let toggleAddCourseHandler = context.showAddCourseHandler;
+  let onSaveHandler = context.onSaveHandler;
 
   return (
     <>
       {showModal && (
-        <Modal title="Lägg till en kurs" onClick={showAddCourseHandler}>
+        <Modal title="Lägg till en kurs" onClick={toggleAddCourseHandler}>
           <AddCourse onSave={onSaveHandler} />
         </Modal>
       )}
-      <section data-testid="course-list-component">
-        <h1>Kurslista</h1>
-        <button onClick={showAddCourseHandler}>Lägg till en kurs</button>
-        <ul>
+      <section data-testid="course-list-component" className="course-section">
+        <button onClick={toggleAddCourseHandler} className="add-course-btn">
+          Lägg till en kurs
+        </button>
+
+        <h2 className="course-heading">Kurslista</h2>
+
+        <ul className="course-ul">
           {course.map((course) => (
-            <li key={course.courseNumber}>
-              <Link to={`/course/${course?.id}`} key={course.courseNumber}>
+            <li key={course.courseNumber} className="course-list">
+              <Link to={`/course/${course?.id}`} key={course.courseNumber} className="course-link">
                 {course.courseTitle}
               </Link>
               <br></br>

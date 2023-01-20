@@ -1,0 +1,13 @@
+.navbar {
+  color: white;
+}
+
+.navbar .nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .nav-link:hover {
+  color: #cdcccc;
+}
+/*# sourceMappingURL=Navbar.css.map */

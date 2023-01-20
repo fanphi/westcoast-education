@@ -31,8 +31,15 @@
       "courseLength": "5 veckor",
       "courseDescription": "lorem ipsum",
       "courseStartDate": "01/07/23"
+    },
+    {
+      "id": 968,
+      "courseNumber": "12345",
+      "courseTitle": "test",
+      "courseLength": "test",
+      "courseDescription": "test",
+      "courseStartDate": "test"
     }
-  
   ],
   "teachers": [
     {
