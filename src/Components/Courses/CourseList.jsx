@@ -1,10 +1,10 @@
 import { useContext } from "react";
-
 import { Link } from "react-router-dom";
 import AddCourse from "./AddCourse";
 import Modal from "../UI/Modal";
 import ListContext from "../Store/list-context";
 import "./Courses.css";
+
 const CourseList = () => {
   const context = useContext(ListContext);
   let course = context.courses;
@@ -29,7 +29,11 @@ const CourseList = () => {
         <ul className="course-ul">
           {course.map((course) => (
             <li key={course.courseNumber} className="course-list">
-              <Link to={`/course/${course?.id}`} key={course.courseNumber} className="course-link">
+              <Link
+                to={`/course/${course?.id}`}
+                key={course.courseNumber}
+                className="course-link"
+              >
                 {course.courseTitle}
               </Link>
               <br></br>

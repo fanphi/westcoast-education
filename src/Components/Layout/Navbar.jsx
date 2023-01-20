@@ -5,6 +5,7 @@ const Navbar = () => {
    <nav className="navbar">
     <h1>Westcoast Education</h1>
     <Link to="/courseList" className="nav-link">Kurslista</Link>
+    <Link to="/teacherList" className="nav-link">Lärarlista</Link>
    </nav>
   )
 }

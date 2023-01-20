@@ -42,7 +42,7 @@
     }
   ],
   "teachers": [
-    {
+    {  "id": 1,
       "firstName": "Test",
       "lastName": "Testsson",
       "socialSecurityNumber": "19780330",
@@ -55,7 +55,7 @@
         "CSS"
       ]
     },
-    {
+    {  "id": 2,
       "firstName": "Test",
       "lastName": "Testsson",
       "socialSecurityNumber": "19780330",
@@ -68,7 +68,7 @@
         "CSS"
       ]
     },
-    {
+    {  "id": 3,
       "firstName": "Test",
       "lastName": "Testsson",
       "socialSecurityNumber": "19780330",

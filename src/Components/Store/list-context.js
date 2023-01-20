@@ -2,26 +2,22 @@ import React, { useState, useEffect } from "react";
 
 const ListContext = React.createContext({
   courses: [],
-  onSaveHandler: () => {},
+  teachers: [],
   showModal: false,
+  onSaveHandler: () => {},
   showAddCourseHandler: () => {},
-  loadCourses: () => {}
+  loadCourses: () => {},
+  onSaveTeacherHandler: () => {},
 });
 
 export const ListContextProvider = (props) => {
   const [courses, setCourses] = useState([]);
+  const [teachers, setTeachers] = useState([]);
   const [showModal, setShowModal] = useState(false);
-
-  // useEffect(() => {
-  //   fetch("http://localhost:3010/courses")
-  //     .then((response) => response.json())
-  //     .then((data) => setCourses(data));
-  // }, []);
-  
 
   useEffect(() => {
     loadCourses();
-    console.log(courses)
+    loadTeachers();
   }, []);
 
   const loadCourses = () => {
@@ -29,15 +25,13 @@ export const ListContextProvider = (props) => {
       .then((response) => response.json())
       .then((data) => setCourses(data));
   };
-
-  useEffect(() => {
-    loadCourses();
-    console.log(courses)
-  }, []);
+  const loadTeachers = () => {
+    fetch("http://localhost:3010/teachers")
+      .then((response) => response.json())
+      .then((data) => setTeachers(data));
+  };
 
   const onSaveHandler = async (course) => {
-    console.log(course);
-
     const result = await fetch("http://localhost:3010/courses", {
       method: "POST",
       headers: {
@@ -52,12 +46,26 @@ export const ListContextProvider = (props) => {
     }
   };
 
-  const showAddCourseHandler = () => {
-    if(!showModal){
-    setShowModal(true);
+  const onSaveTeacherHandler = async (course) => {
+    const result = await fetch("http://localhost:3010/teachers", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(course),
+    });
+
+    if (result.status === 201) {
+      loadTeachers();
+      setShowModal(false);
     }
-    else{
-      setShowModal(false)
+  };
+
+  const showAddCourseHandler = () => {
+    if (!showModal) {
+      setShowModal(true);
+    } else {
+      setShowModal(false);
     }
   };
 
@@ -65,10 +73,12 @@ export const ListContextProvider = (props) => {
     <ListContext.Provider
       value={{
         courses,
+        teachers,
         showModal,
         onSaveHandler,
+        onSaveTeacherHandler,
         showAddCourseHandler,
-        loadCourses
+        loadCourses,
       }}
     >
       {props.children}
