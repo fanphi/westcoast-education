@@ -23,9 +23,20 @@ const CourseDetails = () => {
   }, [error]);
 
 return(
-  <section>
-    <h1>Kursdetaljer</h1>
-   {course.courseTitle}
+  <section className="list-section">
+    <h2 className="list-heading">Kursdetaljer</h2>
+    <about className="details-about">
+   <h3 className="about-heading">{course.courseTitle}</h3>
+   <p>
+    <span className="title">Kursnummer:</span> {course.courseNumber}
+    <br></br>
+    <span className="title">Kurslängd:</span> {course.courseLength}
+    <br></br>
+    <span className="title">Kursstart:</span> {course.courseStartDate}
+    <br></br>
+    <span className="title">Kursbeskrivning:</span> {course.courseDescription}
+    </p>
+   </about>
   </section>
 )
 }

@@ -8,7 +8,7 @@ describe("Start component", () => {
     test('should have title "Välkommen till westcoast education"', () => {
       // Arrange
       setup();
-      const title = screen.getByRole("heading", {name:"Välkommen till Westcoast Education"});
+      const title = screen.getByRole("heading", {name:/Välkommen till Westcoast Education/i});
 
       // Act
 

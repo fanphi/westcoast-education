@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.list-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .add-btn {
+    padding: 0.7%;
+    border-radius: 15px;
+    border: 2px solid #eb7246;
+    background-color: white;
+    color: #c55d37;
+    font-weight: bolder;
+    align-self: flex-end;
+    margin-right: 5%;
+  }
+  .add-btn:hover {
+    color: white;
+    background-color: #eb7246;
+  }
+
+  .start-heading {
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: center;
+  }
+  .list-heading {
+    color: #006d77;
+    margin-bottom: 2%;
+  }
+  .para {
+    text-align: center;
+    margin: 2% 4%;
+  }
+  .list-ul {
+    list-style-type: none;
+    min-width: 40%;
+    @media screen and (max-width: 700px) {
+      min-width: 60%;
+    }
+    .listitem {
+      border: 2px solid #eb7246;
+      margin: 5%;
+      padding: 3%;
+      border-radius: 15px;
+
+      .list-link {
+        text-decoration: none;
+        color: #006d77;
+        font-weight: bold;
+      }
+      .list-link:hover {
+        color: #eb7246;
+      }
+    }
+  }
+}
+
+.title {
+  font-weight: bolder;
+}
+
+.details-about {
+  margin: 2%;
+  max-width: 50%;
+  border: 2px solid #eb7246;
+  padding: 2%;
+  border-radius: 15px;
+  @media screen and (max-width: 700px) {
+    min-width: 70%;
+    padding: 5%;
+  }
+  .about-heading {
+    margin-bottom: 2%;
+    color: #eb7246;
+  }
+}

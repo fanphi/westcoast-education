@@ -4,4 +4,8 @@
   background-color: #629b9a;
   margin-bottom: 2%;
   text-align: center;
+  @media screen and (max-width: 700px){
+    padding:5%;
+    
+  }
 }

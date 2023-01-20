@@ -17,36 +17,35 @@ const TeacherList = () => {
           <AddTeacher onSave={onSaveHandler} />
         </Modal>
       )}
-      <section data-testid="course-list-component" className="course-section">
-        <button onClick={toggleAddCourseHandler} className="add-course-btn">
+      <section data-testid="teacher-list-component" className="list-section">
+        <button onClick={toggleAddCourseHandler} className="add-btn">
           Lägg till en lärare
         </button>
 
-        <h2 className="course-heading">Lärarlista</h2>
+        <h2 className="list-heading">Lärarlista</h2>
 
-        <ul className="course-ul">
+        <ul className="list-ul">
           {teacher.map((teacher) => (
-            <li key={teacher.id} className="course-list">
+            <li key={teacher.id} className="listitem">
               <Link
                 to={`/teacher/${teacher?.id}`}
                 key={teacher.id}
-                className="course-link"
+                className="list-link"
               >
                 {teacher.firstName} {teacher.lastName}
               </Link>
               <br></br>
+              Personummer: {teacher.socialSecurityNumber}
+              <br></br>
               Epost: {teacher.email}
               <br></br>
-              Kurslängd: {teacher.phoneNumber}
+              Mobilnummer: {teacher.phoneNumber}
               <br></br>
-              {/* Beskrivning av kursen: {course.courseDescription} <br></br>
-              Startdatum: {course.courseStartDate} */}
             </li>
           ))}
         </ul>
       </section>
     </>
   );
-
-}
+};
 export default TeacherList;

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import AddCourse from "./AddCourse";
 import Modal from "../UI/Modal";
 import ListContext from "../Store/list-context";
-import "./Courses.css";
 
 const CourseList = () => {
   const context = useContext(ListContext);
@@ -19,20 +18,20 @@ const CourseList = () => {
           <AddCourse onSave={onSaveHandler} />
         </Modal>
       )}
-      <section data-testid="course-list-component" className="course-section">
-        <button onClick={toggleAddCourseHandler} className="add-course-btn">
+      <section data-testid="course-list-component" className="list-section">
+        <button onClick={toggleAddCourseHandler} className="add-btn">
           Lägg till en kurs
         </button>
 
-        <h2 className="course-heading">Kurslista</h2>
+        <h2 className="list-heading">Kurslista</h2>
 
-        <ul className="course-ul">
+        <ul className="list-ul">
           {course.map((course) => (
-            <li key={course.courseNumber} className="course-list">
+            <li key={course.courseNumber} className="listitem">
               <Link
                 to={`/course/${course?.id}`}
                 key={course.courseNumber}
-                className="course-link"
+                className="list-link"
               >
                 {course.courseTitle}
               </Link>
@@ -41,7 +40,7 @@ const CourseList = () => {
               <br></br>
               Kurslängd: {course.courseLength}
               <br></br>
-              Beskrivning av kursen: {course.courseDescription} <br></br>
+              {/* Beskrivning av kursen: {course.courseDescription} <br></br> */}
               Startdatum: {course.courseStartDate}
             </li>
           ))}
