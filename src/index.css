@@ -39,6 +39,17 @@ code {
   margin-right: 5%;
 }
 
+@media screen and (max-width: 700px) {
+  .list-section .add-btn {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 60%;
+    padding: 2%;
+    margin: 2%;
+  }
+}
+
 .list-section .add-btn:hover {
   color: white;
   background-color: #eb7246;

@@ -8,13 +8,13 @@ const TeacherList = () => {
   let teacher = context.teachers;
   let showModal = context.showModal;
   let toggleAddCourseHandler = context.showAddCourseHandler;
-  let onSaveHandler = context.onSaveTeacherHandler;
+  let onSaveTeacherHandler = context.onSaveTeacherHandler;
 
   return (
     <>
       {showModal && (
         <Modal title="Lägg till en lärare" onClick={toggleAddCourseHandler}>
-          <AddTeacher onSave={onSaveHandler} />
+          <AddTeacher onSave={onSaveTeacherHandler} />
         </Modal>
       )}
       <section data-testid="teacher-list-component" className="list-section">

@@ -4,7 +4,7 @@ const ListContext = React.createContext({
   courses: [],
   teachers: [],
   showModal: false,
-  onSaveHandler: () => {},
+  onSaveCourseHandler: () => {},
   showAddCourseHandler: () => {},
   loadCourses: () => {},
   onSaveTeacherHandler: () => {},
@@ -31,7 +31,7 @@ export const ListContextProvider = (props) => {
       .then((data) => setTeachers(data));
   };
 
-  const onSaveHandler = async (course) => {
+  const onSaveCourseHandler = async (course) => {
     const result = await fetch("http://localhost:3010/courses", {
       method: "POST",
       headers: {
@@ -46,13 +46,13 @@ export const ListContextProvider = (props) => {
     }
   };
 
-  const onSaveTeacherHandler = async (course) => {
+  const onSaveTeacherHandler = async (teacher) => {
     const result = await fetch("http://localhost:3010/teachers", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(course),
+      body: JSON.stringify(teacher),
     });
 
     if (result.status === 201) {
@@ -60,6 +60,8 @@ export const ListContextProvider = (props) => {
       setShowModal(false);
     }
   };
+
+  
 
   const showAddCourseHandler = () => {
     if (!showModal) {
@@ -75,7 +77,7 @@ export const ListContextProvider = (props) => {
         courses,
         teachers,
         showModal,
-        onSaveHandler,
+        onSaveCourseHandler,
         onSaveTeacherHandler,
         showAddCourseHandler,
         loadCourses,

@@ -9,13 +9,13 @@ const CourseList = () => {
   let course = context.courses;
   let showModal = context.showModal;
   let toggleAddCourseHandler = context.showAddCourseHandler;
-  let onSaveHandler = context.onSaveHandler;
+  let onSaveCourseHandler = context.onSaveCourseHandler;
 
   return (
     <>
       {showModal && (
         <Modal title="Lägg till en kurs" onClick={toggleAddCourseHandler}>
-          <AddCourse onSave={onSaveHandler} />
+          <AddCourse onSave={onSaveCourseHandler} />
         </Modal>
       )}
       <section data-testid="course-list-component" className="list-section">

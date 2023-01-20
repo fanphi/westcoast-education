@@ -6,8 +6,6 @@ const AddCourse = (props) => {
   const courseDescription = useRef();
   const courseStartDate = useRef();
 
-
-
   const onSaveHandler = (e) => {
     e.preventDefault();
 
